@@ -1,0 +1,89 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: blanchedalmond;
+}
+
+.layout {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.layout__buttons {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.buttons__btn1,
+.buttons__btn2 {
+    position: relative;
+    width: 22rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    border: 3px solid #6cbffc;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 600;
+    color: #6cbffc;
+    background-color: white;
+    outline: none;
+}
+/* Usamos overflow hidden para ocultar todo lo que sobre pase la caja original */
+/* Contenido de before */
+.buttons__btn1::before{
+    content: "Subir Video";
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #6cbffc;
+    border: none;
+    transform: translateY(7rem);
+    transition: all 300ms ease;
+}
+/* Usamos el translate para posicionarlo en la posicion original */
+.buttons__btn1:hover::before {
+    transform: translateY(0);
+}
+.buttons__btn2 {
+    background-color: #6cbffc;
+    border: none;
+    color: white;
+    border-radius: 10rem;
+    overflow: unset;
+}
+
+.buttons__btn2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6cbffc;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: all 1s ease-in;
+}
+
+.buttons__btn2:hover::before {
+    transform: scaleX(1.3) scaleY(1.5);
+    opacity: 0;
+}
