@@ -1,0 +1,23 @@
+body{
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article h2 {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+}
+
+article a {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+article p {
+    color: #000;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 15px;
+}

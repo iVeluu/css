@@ -1,0 +1,26 @@
+body {
+    background-color: aliceblue;
+}
+
+#title{
+    display: block;
+    background-color: #303030;
+    font-size: 34px;
+    padding: 17px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.articulo {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.subtitulo {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}

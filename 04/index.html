@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/reset.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="../src/fontawesome-free-6.1.2-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="layout">
+        <header class="layout__header">
+            <div class="header__top">
+                <i class="fa-solid fa-language"></i>
+                <h3 class="header__title">Traductor</h3>
+            </div>
+            <div class="header__bottom">
+                <form class="header__search">
+                    <div class="search__control">
+                        <input type="search" name="search" class="search__input" placeholder="Introduce una palabra" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <select name="languages" id="languages" class="search__select">
+                        <option value="esp" class="search__option">Español</option>
+                        <option value="ing" class="search__option">Inglés</option>
+                        <option value="ger" class="search__option">Alemán</option>
+                        <option value="fr" class="search__option">Francés</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+
+        <main class="layout__main">
+            <h1 class="main__title">Ordenador</h1>
+            <a href="#" class="word__btn">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </main>
+
+        <section class="layout__definitions">
+            <h3 class="definitions__title">
+                <span>Definiciones</span>
+            </h3>
+
+            <ul class="definitions__list">  
+                <li class="list__item">
+                    <p class="list__definition">
+                        <b>Ordenador: </b>
+                        Máquina electrónica capaz de almacenar información y tratarla 
+                        automáticamente mediante operaciones matemáticas y lógicas controladas 
+                        por programas informáticos.
+                    </p>
+                </li>
+                <li class="list__item">
+                    <p class="list__definition">
+                        <b>Ordenador compatible: </b>
+                        Ordenador capaz de ejecutar los mismos programas 
+                        que otros ordenadores del mismo tipo.
+                    </p>
+                </li>
+                <li class="list__item">
+                    <p class="list__definition">
+                        <b>Ordenador personal: </b>
+                        Ordenador de sobremesa que incluye unidad central,
+                        teclado, pantalla y una o más unidades de disco y que puede funcionar Sinonimos
+                        estar conectado a una red informática.
+                    </p>
+                </li>
+                <li class="list__item">
+                    <p class="list__definition">
+                        <b>Ordenador portátil: </b>
+                        Ordenador personal de peso y tamaño tan reducidos que 
+                        se puede llevar cómodamente de un lado a otro, como si fuera un maletín; una 
+                        batería incorporada le permite cierta autonomía de funcionamiento
+                    </p>
+                </li>
+            </ul>
+
+            <article class="definitions__syn">
+                <h4 class="syn__title">Sinonimos: </h4>
+                <p class="syn__item">Computador</p>
+                <p class="syn__item">Procesadora</p>
+                <p class="syn__item">Computadora</p>
+            </article>
+        </section>
+
+        <div class="layout__footer">
+            <p class="footer__text">
+                Todos los derechos reservados a Alejandro Luna &copy;
+            </p>
+        </div>
+    </div>
+</body>
+</html>
